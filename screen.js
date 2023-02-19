@@ -31,7 +31,7 @@ const screen = {
             let htmlText = `
             <div class="ingredient-section-1">
                 <div class="ingredient-tag">
-                    <img src="/img/${img}" alt="">
+                    <img src="img/${img}" alt="">
                     <p class="ingredient-name">${name}</p>
                 </div>
                 <div class="selector"></div>
@@ -61,7 +61,7 @@ const screen = {
             <div class="ingredient-section-2">
 
                 <div class="ingredient-tag">
-                    <img src="/img/${img}" alt="">
+                    <img src="img/${img}" alt="">
                     <p class="ingredient-name">${name}</p>
                 </div>
 
