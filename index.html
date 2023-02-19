@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Calorias de Saladas</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c666ed8da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bem-vindo ao nosso</h1>
+        <h1 class="title">medidor de calorias de <span>saladas!<img src="/logo.png"/></span></h1>
+        <br>
+        <p>
+            Com apenas alguns cliques, escolha seus ingredientes favoritos, personalize as quantidades e obtenha o total
+            de calorias da sua salada. É fácil, rápido e perfeito para quem busca uma alimentação saudável.
+        </p>
+    </header>
+
+    <div class="navigation">
+        <div id="change-section">
+            <button class="navigation-btn">
+                Continuar <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="selector"></div>
+        </div>
+    </div>
+
+    <section>
+        <div id="container-ingredients"></div>
+    </section>
+
+    <div id="calories-result" class="hidden">
+        Total de calorias:
+    </div>
+
+    <footer>
+        <p>2023 Vinícius Ponte  <img src="/logo.png"/></p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

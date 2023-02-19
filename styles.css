@@ -1,0 +1,295 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 18%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FEFBE9;
+    color: #253d35;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+section {
+    border-top: 10px solid #183A1D;
+    border-bottom: 10px solid #183A1D;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    font-size: 1.2rem;
+    background-color: #F0A04B;
+    color: #473C33;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: bolder;
+    position: relative;
+    padding: 10px 25px 10px 40px;
+}
+
+footer img {
+    vertical-align: middle;
+    padding-left: 5px;
+    width: 70px;
+    bottom: 10px;
+    width: 50px;
+}
+
+
+
+/* Header */
+
+header {
+    padding: 30px 0 20px;
+    color: #473C33;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header p {
+    text-align: justify;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    color: #F0A04B;
+    text-shadow: 2px 3px 0px #473C33;
+}
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        text-align: center;
+    }
+    .title {
+        font-size: 35px;
+    }
+}
+
+header img {
+    padding-left: 10px;
+    vertical-align: middle;
+
+}
+
+header span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+  
+
+/* NAV */
+
+.navigation {
+    text-align: end;
+    padding: 20px 0;
+}
+
+#change-section {
+    text-align: end;
+    display: inline-block;
+    position: relative;
+}
+
+.navigation-btn {
+
+    box-shadow: 3px 3px 0px 0px #473C33;
+    background-color: #F0A04B;
+    border-radius: 5%;
+    border: 1px solid #473C33;
+    display: inline-block;
+    cursor: pointer;
+    color: #473C33;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 2px;
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.navigation-btn:hover {
+    background-color: #fcb972;
+
+}
+
+.navigation-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+/* SECTION 1 */
+
+.s1-container-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.ingredient-section-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    transition: transform .2s;
+    padding: 0.5rem;
+}
+
+.ingredient-section-1:hover {
+    transform: scale(1.02);
+}
+
+.ingredient-tag {
+    display: flex;
+    align-items: center;
+}
+
+.selected-ingredient {
+    background-color: green;
+}
+
+.selector {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+
+.ingredient-section-1 img {
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+
+/* SECTION 2 */
+
+.ingredient-section-2 {
+    background-color: white;
+    padding: 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 10px;
+}
+
+@media (max-width: 650px) {
+    .ingredient-section-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ingredient-section-2 img {
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+
+.nutritional-info {
+    display: grid;
+}
+
+.nutritional-info>div {
+    width: 200px;
+    justify-self: end;
+}
+
+.proportional-values {
+    border-bottom: 2px solid #A6BB8D;
+    border-left: 2px solid #A6BB8D;
+    border-right: 2px solid #A6BB8D;
+    padding: 4px;
+    background-color: #E1EEDD;
+}
+
+.proportional-values div {
+    display: flex;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+
+.serving-size {
+    background-color: #253d35;
+    color: #A6BB8D;
+    padding: 4px 4px;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-gap: 10px;
+}
+
+textarea {
+    background-color: #B1E693;
+    color: #333333;
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+    resize: none;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+}
+
+textarea:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+textarea:focus {
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #A6BB8D;
+}
+
+#calories-result {
+    background-color: #183A1D;
+    color: #c5d1b7;
+    padding: 10px 1.4rem;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: -110px;
+}
+
+#calories-result>p {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 5px;
+}
