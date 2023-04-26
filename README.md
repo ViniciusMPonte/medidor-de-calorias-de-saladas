@@ -1,10 +1,13 @@
 # Medidor de Calorias de Saladas
 
-O **Medidor de Calorias de Saladas** é um site estático desenvolvido com HTML, CSS e Javascript que permite aos usuários escolher ingredientes e medir a quantidade de calorias de uma salada personalizada. 
-
-## Acessando o site
+O **Medidor de Calorias de Saladas** é um site estático desenvolvido com HTML, CSS e Javascript que permite aos usuários escolher ingredientes e medir a quantidade de calorias de uma salada personalizada.
 
 O site pode ser acessado através do link: https://viniciusmponte.github.io/medidor-de-calorias-de-saladas/
+
+
+## Screenshot
+
+<img src="https://raw.githubusercontent.com/ViniciusMPonte/portfolio/main/images/medidor-de-calorias.png" alt="Medidor de Calorias" style="width: 500px; height: auto;">
 
 ## Como funciona
 
